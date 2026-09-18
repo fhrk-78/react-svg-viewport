@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 24
           cache: 'pnpm'
-          registry-url: 'https://npm.pkg.github.net'
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@fhrk-78'
 
       - name: Install dependencies
