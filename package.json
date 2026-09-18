@@ -1,0 +1,47 @@
+{
+  "name": "@fhrk-78/react-svg-viewport",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhrk-78/react-svg-viewport.git"
+  },
+  "main": "./dist/react-svg-viewport.umd.cjs",
+  "module": "./dist/react-svg-viewport.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/react-svg-viewport.js",
+      "require": "./dist/react-svg-viewport.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "unplugin-dts": "^1.1.0",
+    "vite": "^8.3.0"
+  }
+}
