@@ -6,7 +6,7 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public",
-    "registry": "https://npm.pkg.github.net"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
