@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -37,6 +38,6 @@ jobs:
         run: pnpm run build
 
       - name: Publish package
-        run: pnpm publish --no-git-checks
+        run: pnpm publish --no-git-checks --no-provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
